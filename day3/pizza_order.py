@@ -24,13 +24,16 @@ elif select_pizza_size == "M":
         bill += ml_pepperoni
     if select_extra_cheese == "Y":
         bill += cheese
-else:
+elif select_pizza_size == "L":
     bill += l_pizza_size
     if select_add_peppperoni == "Y":
         bill += ml_pepperoni
     if select_extra_cheese == "Y":
         bill += cheese
+else:
+    print("잘못된 입력입니다.")
 print(f"최종 결제 금액은 ${bill}입니다.")
+
 
 
 
