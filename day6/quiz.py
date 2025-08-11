@@ -14,9 +14,9 @@ def std_weight(height:float, gender:str) -> float :
     else :
         raise ValueError(f"잘못된 입력: {gender}") # 예외 던짐
 
-height = 1.75
+height = 175
 gender = "남자"
 # :.1f 포맷지정자(소수점 1자리수로 출력)
-print(f"키 {height * 100:.1f}cm {gender}의 " 
-      f"표준 체중은 {std_weight(height, gender)}kg 입니다.")
+print(f"키 {height}cm {gender}의 " 
+      f"표준 체중은 {std_weight(height / 100, gender)}kg 입니다.")
 
