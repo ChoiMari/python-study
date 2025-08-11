@@ -6,7 +6,8 @@ def std_weight(height:float, gender:str) -> float :
     if (gender == "남자" 
         or gender.upper() == "M" 
         or gender.lower() == "man") :
-       return round(height * height * 22, 2)
+       return round(height * height * 22, 2) 
+    # 여기서 처리 안하고 리턴값 받아서 호출부에서 round()처리해도 됨.
     elif (gender == "여자" 
           or gender.upper() == "W" 
           or gender.lower() == "woman") :
