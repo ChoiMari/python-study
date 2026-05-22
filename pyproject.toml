@@ -1,0 +1,11 @@
+#uv sync 명령치면
+#이 파일에 적혀있는 내용대로 가상환경(.venv)을 생성/수정해서 맞춤
+[project]
+name = "python-study"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "isort>=8.0.1",
+]
